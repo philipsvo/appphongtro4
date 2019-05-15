@@ -60,20 +60,6 @@
                                     <action selector="bt_Register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9H3-A1-PWU"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXn-d1-nur" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="16" y="585" width="343" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="xfQ-j1-zDo"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-jY-ZsE" customClass="GIDSignInButton">
-                                <rect key="frame" x="16" y="505" width="343" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="QOs-OP-Qx4"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -81,20 +67,14 @@
                             <constraint firstItem="9BD-1G-SBr" firstAttribute="top" secondItem="wpx-Ea-uOC" secondAttribute="bottom" constant="8" id="3LT-CQ-bcN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8aA-Vv-DWn" secondAttribute="trailing" constant="16" id="8QL-0o-fQY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wpx-Ea-uOC" secondAttribute="trailing" constant="16" id="L3X-Py-rvK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vOq-jY-ZsE" secondAttribute="trailing" constant="16" id="Ml9-rR-d0w"/>
-                            <constraint firstItem="sXn-d1-nur" firstAttribute="top" secondItem="vOq-jY-ZsE" secondAttribute="bottom" constant="35" id="OkX-MD-V7Y"/>
                             <constraint firstItem="wpx-Ea-uOC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="X95-ZH-ECT"/>
                             <constraint firstItem="YMv-PO-y1e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="als-IA-YRM"/>
                             <constraint firstItem="wpx-Ea-uOC" firstAttribute="top" secondItem="8aA-Vv-DWn" secondAttribute="bottom" constant="8" id="b8k-4x-lBV"/>
                             <constraint firstItem="wpx-Ea-uOC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4M-fk-2fr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9BD-1G-SBr" secondAttribute="trailing" constant="16" id="dbO-ge-v5c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sXn-d1-nur" secondAttribute="bottom" constant="37" id="ekX-k7-lZm"/>
-                            <constraint firstItem="vOq-jY-ZsE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fcK-Xb-uXz"/>
                             <constraint firstItem="YMv-PO-y1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="p8F-fh-thW"/>
                             <constraint firstItem="8aA-Vv-DWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qPk-Qa-0wc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sXn-d1-nur" secondAttribute="trailing" constant="16" id="sPp-Hp-Gz8"/>
                             <constraint firstItem="8aA-Vv-DWn" firstAttribute="top" secondItem="YMv-PO-y1e" secondAttribute="bottom" constant="5" id="sWl-RD-oSN"/>
-                            <constraint firstItem="sXn-d1-nur" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yBy-u3-Fas"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YMv-PO-y1e" secondAttribute="trailing" constant="16" id="zxC-Zb-OqW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -184,7 +164,7 @@
             </objects>
             <point key="canvasLocation" x="1943.2" y="-1264.3178410794603"/>
         </scene>
-        <!--Item-->
+        <!--Tìm Kiếm-->
         <scene sceneID="AgP-at-0Pl">
             <objects>
                 <viewController storyboardIdentifier="Screen_Tabar_Custom_Search_02" id="43E-ys-LEf" customClass="Screen_Tabar_Custom_Search_02_ViewController" customModule="QuanTro" customModuleProvider="target" sceneMemberID="viewController">
@@ -242,7 +222,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lP5-h2-kA3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zzk-0N-6DQ"/>
+                    <tabBarItem key="tabBarItem" title="Tìm Kiếm" id="zzk-0N-6DQ"/>
                     <navigationItem key="navigationItem" id="vlC-8l-zZv"/>
                     <connections>
                         <outlet property="SearchBar" destination="3ja-qZ-MH4" id="S7S-7L-3Ug"/>
@@ -842,12 +822,16 @@
             </objects>
             <point key="canvasLocation" x="11460" y="-870.31484257871068"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Screen Tabar Controller-->
         <scene sceneID="DuO-hB-lv7">
             <objects>
-                <tabBarController storyboardIdentifier="MH_Chat_tabar" id="3no-B1-31Z" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MH_Chat_tabar" id="3no-B1-31Z" customClass="Screen_Tabar_Controller" customModule="QuanTro" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="E0R-82-h1M">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="tLw-ob-hbD"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="tLw-ob-hbD">
+                            <connections>
+                                <action selector="didTapRootView:" destination="3no-B1-31Z" id="bji-47-L39"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6aS-rN-jtd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -862,7 +846,7 @@
             </objects>
             <point key="canvasLocation" x="10532" y="-870.31484257871068"/>
         </scene>
-        <!--Item-->
+        <!--Phòng Nổi Bật-->
         <scene sceneID="qQA-3j-hQV">
             <objects>
                 <viewController id="S3D-X9-PWJ" customClass="Screen_Tabar_Custom_Search_01_ViewController" customModule="QuanTro" customModuleProvider="target" sceneMemberID="viewController">
@@ -984,7 +968,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r4p-Oe-rC8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lf1-od-Hqe"/>
+                    <tabBarItem key="tabBarItem" title="Phòng Nổi Bật" id="lf1-od-Hqe"/>
                     <navigationItem key="navigationItem" id="PmN-Q6-tfb" userLabel="hien thi"/>
                     <connections>
                         <outlet property="tableView" destination="BNq-ZN-Jxu" id="PZM-gf-5lC"/>
@@ -994,10 +978,10 @@
             </objects>
             <point key="canvasLocation" x="4156" y="-1612"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Screen Tabar Controller00-->
         <scene sceneID="jPF-Qq-6Oo">
             <objects>
-                <tabBarController storyboardIdentifier="MH_Customer_seach" id="Nx8-iB-gJj" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MH_Customer_seach" id="Nx8-iB-gJj" customClass="Screen_Tabar_Controller_00" customModule="QuanTro" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="i7R-5Z-PiB"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wuk-ph-JOw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -1135,6 +1119,7 @@
                         <outlet property="passwordField" destination="Gvb-e6-OoO" id="PFO-Gk-ZL8"/>
                         <outlet property="register_custom" destination="CSA-zy-elV" id="wId-Zm-Osy"/>
                         <outlet property="usernameFiled" destination="S6f-ql-W0q" id="js2-2k-MJq"/>
+                        <segue destination="hrc-ql-RB6" kind="show" identifier="screen_main_kh" id="5GY-3L-HSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSD-EH-Fjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2042,7 +2027,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fTp-sR-uQa"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DH0-ga-ato"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ywm-G2-ZVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2418,5 +2403,6 @@ Có sân trước rộng để phơi đồ, để xe.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cdB-cP-UVe"/>
+        <segue reference="V2a-Ox-CP5"/>
     </inferredMetricsTieBreakers>
 </document>

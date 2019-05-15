@@ -25,6 +25,7 @@ class ListRoomerController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+        print("AA")
     }
     
     override func viewDidAppear(_ animated: Bool) {

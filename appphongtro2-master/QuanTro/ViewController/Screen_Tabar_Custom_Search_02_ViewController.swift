@@ -65,6 +65,12 @@ class Screen_Tabar_Custom_Search_02_ViewController: UIViewController {
     var searchCountry = [String]()
     var searching = false
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        SearchBar.delegate?.searchBarCancelButtonClicked?(SearchBar)
+        SearchBar.becomeFirstResponder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

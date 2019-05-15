@@ -19,13 +19,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in Screen_Tabar_ListRoom.viewDidLoad():Screen_Tabar_ListRoom.swift">
+         contextName = "closure #1 in ListRoomerController.tableView(_:commit:forRowAt:):ListRoomerController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "a">
+               value = "Store.shared.indexDaytro">
             </PersistentString>
             <PersistentString
-               value = "item.quanlyphong![i]">
+               value = "indexPath.row">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -37,6 +37,14 @@
             </PersistentString>
             <PersistentString
                value = "newRoomer.ten">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Screen_Tabar_Controller.didTapRootView(_:):Screen_Tabar_Controller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController?.viewControllers">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -74,13 +82,13 @@
          contextName = "closure #1 in Helper.fetchData(tableName:currentUserId:completion:):Helper.swift">
          <PersistentStrings>
             <PersistentString
-               value = "snapshot.key">
+               value = "roomer">
             </PersistentString>
             <PersistentString
                value = "item3.value">
             </PersistentString>
             <PersistentString
-               value = "roomer">
+               value = "snapshot.key">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -96,13 +104,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in ListRoomerController.tableView(_:commit:forRowAt:):ListRoomerController.swift">
+         contextName = "closure #1 in Screen_Tabar_ListRoom.viewDidLoad():Screen_Tabar_ListRoom.swift">
          <PersistentStrings>
             <PersistentString
-               value = "Store.shared.indexDaytro">
+               value = "a">
             </PersistentString>
             <PersistentString
-               value = "indexPath.row">
+               value = "item.quanlyphong![i]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

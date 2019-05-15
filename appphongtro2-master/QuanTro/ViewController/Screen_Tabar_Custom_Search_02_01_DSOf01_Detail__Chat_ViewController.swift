@@ -72,9 +72,9 @@ class Screen_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_ViewController: UIVie
     // chua action nha
     @IBAction func bt_search44(_ sender: Any) {
         print(".........bam search ...............\n")
-        let scr = self.storyboard?.instantiateViewController(withIdentifier: "Screen_Tabar_Custom_Search_02")
+        let scr = self.storyboard?.instantiateViewController(withIdentifier: "Screen_Tabar_Custom_Search_02") as! Screen_Tabar_Custom_Search_02_ViewController
         //        present(scr!, animated: true, completion: nil)
-        navigationController?.popToViewController(scr!, animated: true)
+        navigationController?.pushViewController(scr, animated: true)
         
         
     }

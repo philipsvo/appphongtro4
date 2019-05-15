@@ -366,8 +366,9 @@ class RegisterController: UIViewController ,UIImagePickerControllerDelegate, UIN
     }
     
     func goto_Screen_Main_khach_hang() {
-        let scr = self.storyboard?.instantiateViewController(withIdentifier: "MH_chucnang_khachhang")
-        present(scr!, animated: true, completion: nil)
+//        let scr = self.storyboard?.instantiateViewController(withIdentifier: "MH_chucnang_khachhang")
+//        present(scr!, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "screen_main_kh", sender: Any?.self)
     }
     
 }
