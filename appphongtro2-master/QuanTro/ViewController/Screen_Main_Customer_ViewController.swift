@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import PopupDialog
 
 class Screen_Main_Customer_ViewController: UIViewController{
 
@@ -20,54 +21,8 @@ class Screen_Main_Customer_ViewController: UIViewController{
 //cell.avatar.loadavatar(link: currenUser.linkAvatar)
         avatar0.loadavatar(link: currenUser.linkAvatar)
         setupLeftButton()
-//        tableView.delegate = self
-//        tableView.dataSource  = self
-        // Do any additional setup after loading the view.
     }
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 2
-//    }
-    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "CELL", for: indexPath) as! CELL_Main_Customer_TableViewCell
-//        cell.avatar.layer.cornerRadius = cell.avatar.frame.width/2
-//        if(indexPath.row == 0)
-//        {
-//            cell.lb_text.text = "Đăng xuất"
-//            cell.avatar.loadavatar(link: currenUser.linkAvatar)
-//        }
-//        if(indexPath.row == 1)
-//        {
-//            cell.lb_text.text = "Tìm Kiếm"
-//            cell.avatar.image = UIImage(named: "search")
-//        }
-//
-//
-//        return cell
-//    }
-//
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 100
-//    }
-
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if(indexPath.row == 0)
-//        {
-//           self.isLogOut()
-//            navigationController?.popToRootViewController(animated: false)
-//        }
-//        if(indexPath.row == 1)
-//        {
-//            let scr = storyboard?.instantiateViewController(withIdentifier: "MH_Customer_seach")
-//            navigationController?.pushViewController(scr!, animated: true)
-//        }
-//    }
-//
     func isLogOut()  {
         let firebaseAuth = Auth.auth()
         do {
@@ -77,13 +32,11 @@ class Screen_Main_Customer_ViewController: UIViewController{
         }
     }
     
-    
     @IBAction func bt_chucnang_timkiem(_ sender: Any) {
         self.chucnang_timkiem()
     }
     
     @IBAction func bt_loguot_0(_ sender: Any) {
-        
         let alert:UIAlertController = UIAlertController(title: "Bạn chắc chắn muốn đăng xuất !", message: "Xin chọn", preferredStyle: .alert)
         // tao ra 2 button
         let bt_1:UIAlertAction = UIAlertAction(title: "Đăng Xuất", style: .default) { (UIAlertAction) in
@@ -131,4 +84,5 @@ class Screen_Main_Customer_ViewController: UIViewController{
         alert.addAction(UIAlertAction(title: "Không", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
     }
+    
 }

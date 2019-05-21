@@ -1,6 +1,7 @@
 PODS:
   - CodableFirebase (0.2.1)
   - DLRadioButton (1.4.12)
+  - DynamicBlurView (3.0.1)
   - Firebase/Auth (5.13.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.5)
@@ -75,6 +76,8 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - PopupDialog (0.9.2):
+    - DynamicBlurView (~> 3.0.1)
   - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
@@ -85,12 +88,14 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - Kingfisher
+  - PopupDialog
   - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CodableFirebase
     - DLRadioButton
+    - DynamicBlurView
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -105,11 +110,13 @@ SPEC REPOS:
     - Kingfisher
     - leveldb-library
     - nanopb
+    - PopupDialog
     - TextFieldEffects
 
 SPEC CHECKSUMS:
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  DynamicBlurView: b1df5415f9bd31897549e5d7077e5ec120a4d636
   Firebase: 6df9a6114bc9f106a98fe83d5438d4d9833c2019
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
   FirebaseAuth: 9299ab178271bec7426967b05b2718bb6fc31f17
@@ -124,8 +131,9 @@ SPEC CHECKSUMS:
   Kingfisher: 07067cfacf371117330dceb4b4b8f5c4b691ab42
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  PopupDialog: f4bb461bf70ff422be0b56656566424ee9273080
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: 64b72969b6802ad95707717d48627412c08021ee
+PODFILE CHECKSUM: 557098e1ab446e30d42a3fa39c19ab0007eccfa0
 
 COCOAPODS: 1.6.0

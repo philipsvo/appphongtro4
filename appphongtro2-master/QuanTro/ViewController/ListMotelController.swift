@@ -3,6 +3,7 @@ import UIKit
 import FirebaseStorage
 //import GoogleSignIn
 import Firebase
+import PopupDialog
 
 class ListMotelController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -174,7 +175,22 @@ class ListMotelController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBAction func didTapInforBoss(_ sender: Any) {
+        let story: UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let inforVC: InformationViewController = story.instantiateViewController(withIdentifier: "information") as! InformationViewController
         
+        let overlayAppearance = PopupDialogOverlayView.appearance()
+        overlayAppearance.blurRadius      = 2.0
+        overlayAppearance.blurEnabled     = true
+        overlayAppearance.liveBlurEnabled = false
+        overlayAppearance.opacity         = 0.5
+        
+        let popup = PopupDialog.init(viewController: inforVC, buttonAlignment: .horizontal, transitionStyle: .bounceUp, preferredWidth: screenWidth, tapGestureDismissal: false, panGestureDismissal: false, hideStatusBar: false)
+        
+        inforVC.view.frame = popup.view.frame
+        
+        popup.view.addSubview(inforVC.view)
+        
+        self.present(popup, animated: true, completion: nil)
     }
 }
 

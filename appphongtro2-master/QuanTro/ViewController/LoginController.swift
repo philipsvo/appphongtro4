@@ -21,6 +21,8 @@ class LoginController: UIViewController{
     @IBOutlet weak var loginButton: UIButton!
     var array_user:Array<User> = Array<User>()
     
+    let indicator: UIActivityIndicatorView = UIActivityIndicatorView.init(frame: CGRect(x: 0, y: 0, width: 75, height: 75))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -67,13 +69,23 @@ class LoginController: UIViewController{
     }
     
     @IBAction func bt_login(_ sender: Any) {
+        let indicatorView = UIView.init(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        indicatorView.backgroundColor = #colorLiteral(red: 0.6273961067, green: 0.6228634715, blue: 0.6308681369, alpha: 0.4008307658)
+        self.view.addSubview(indicatorView)
+        indicatorView.addSubview(indicator)
+        indicator.center = indicatorView.center
+        indicator.style = .whiteLarge
+        indicator.startAnimating()
         
         if(usernameField.text == "" || passwordField.text == "")
         {
             let alert  = UIAlertController(title: "Thông báo", message: "Vui lòng nhập đủ thông tin !", preferredStyle: .alert)
             let btn_ok:UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alert.addAction(btn_ok)
-            present(alert, animated: true, completion: nil)
+            present(alert, animated: true) {
+                self.indicator.stopAnimating()
+                indicatorView.removeFromSuperview()
+            }
         }
         else
         {
@@ -104,6 +116,8 @@ class LoginController: UIViewController{
                             if(Int(currenUser.quyen) == 1)
                             {
                                 print("---------------- Chuyen man hinh cho user voi quyen la 1 ---------------")
+                                self?.indicator.stopAnimating()
+                                indicatorView.removeFromSuperview()
                                 self?.goto_Screen_Main_khach_hang()
                                 return
                             }
@@ -124,6 +138,8 @@ class LoginController: UIViewController{
                     Helper.shared.fetchData(tableName: tablename, currentUserId: currenUser.id, completion: { (newUser,error) in
                         if error == "" {
                             Store.shared.userMotel = newUser
+                            self?.indicator.stopAnimating()
+                            indicatorView.removeFromSuperview()
                             self?.performSegue(withIdentifier: "FromLoginToListMotel", sender: self)
                         }
                         else {
@@ -137,7 +153,10 @@ class LoginController: UIViewController{
                     let alert = UIAlertController(title: "Thông Báo", message: "Email hoac password không chính xác", preferredStyle: .alert)
                     let btn_ok:UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alert.addAction(btn_ok)
-                    self?.present(alert, animated: true, completion: nil)
+                    self?.present(alert, animated: true) {
+                        self?.indicator.stopAnimating()
+                        indicatorView.removeFromSuperview()
+                    }
                     
                 }
             }

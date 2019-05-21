@@ -100,6 +100,9 @@ class Screen_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_ViewController: UIVie
         tablename_3.setValue(tt)
     }
     
+    @IBAction func tapGesture(_ sender: Any) {
+        txt_chat.resignFirstResponder()
+    }
     
 }
 
