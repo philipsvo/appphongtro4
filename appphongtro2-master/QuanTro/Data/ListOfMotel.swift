@@ -116,7 +116,7 @@ class ListOfMotel {
                         "Motaphong": item2.chitietphong!.motaphong!,
                         "Songuoidangthue": item2.chitietphong!.songuoidangthue!,
                         "Songuoitoida": item2.chitietphong!.songuoitoida!,
-                        "Tenphong": item2.chitietphong?.tenphong!
+                        "Tenphong": item2.chitietphong!.tenphong!
                     ]
                     Database.database().reference().child("User/User2/\(uid!)/Quanlydaytro/\(idDaytro)/Quanlyphong/\(idPhong)/Chitietphong").setValue(data)
                 }

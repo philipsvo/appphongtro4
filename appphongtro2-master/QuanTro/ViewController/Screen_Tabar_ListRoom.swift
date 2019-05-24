@@ -35,7 +35,7 @@ class Screen_Tabar_ListRoom: UIViewController {
                 for item in curUser.quanlydaytro! {
                     if item.quanlyphong!.count > 0 {
                         for item2 in item.quanlyphong! {
-                            let a: Quanlyphong = Quanlyphong.init(idPhong: item2.iDphong!, chitietphong: item2.chitietphong!, thanhvien: item2.thanhvien ?? [])
+                            let a: Quanlyphong = Quanlyphong.init(idPhong: item2.iDphong!, chitietphong: item2.chitietphong!, thanhvien: item2.thanhvien ?? [], hopdong: HopDong.init())
                             self.phongtro.append(a)
                         }
                     }

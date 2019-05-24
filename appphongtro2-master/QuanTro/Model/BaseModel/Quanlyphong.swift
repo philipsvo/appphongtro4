@@ -16,10 +16,12 @@ class Quanlyphong : Codable {
 	var iDphong : String?
 	var chitietphong : Chitietphong?
     var thanhvien: [ThanhVien]?
+    var hopdong: HopDong?
 
-    init(idPhong: String, chitietphong: Chitietphong, thanhvien: [ThanhVien]) {
+    init(idPhong: String, chitietphong: Chitietphong, thanhvien: [ThanhVien], hopdong: HopDong) {
         self.iDphong = idPhong
         self.chitietphong = chitietphong
         self.thanhvien = thanhvien
+        self.hopdong = hopdong
     }
 }

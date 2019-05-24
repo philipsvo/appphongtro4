@@ -37,6 +37,7 @@
 		208DB18C229195FF002070DA /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB18B229195FF002070DA /* InformationViewController.swift */; };
 		20908DE62284FEEA00362EFF /* Screen_Tabar_ListRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908DE52284FEEA00362EFF /* Screen_Tabar_ListRoom.swift */; };
 		20908DE8228514F400362EFF /* Screen_Tabar_ChitietPhong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908DE7228514F400362EFF /* Screen_Tabar_ChitietPhong.swift */; };
+		209628902294F2CB00CF5AC9 /* HopDong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096288F2294F2CB00CF5AC9 /* HopDong.swift */; };
 		209E14C9228C7800008601E6 /* Screen_Tabar_Controller_00.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E14C8228C7800008601E6 /* Screen_Tabar_Controller_00.swift */; };
 		20BCC8BC228AF69C008181BE /* Screen_Tabar_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BCC8BB228AF69C008181BE /* Screen_Tabar_Controller.swift */; };
 		20EC50CF227DE1F100C17212 /* Quanlythongtincanhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC50CA227DE1F000C17212 /* Quanlythongtincanhan.swift */; };
@@ -111,6 +112,7 @@
 		208DB18B229195FF002070DA /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		20908DE52284FEEA00362EFF /* Screen_Tabar_ListRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Tabar_ListRoom.swift; sourceTree = "<group>"; };
 		20908DE7228514F400362EFF /* Screen_Tabar_ChitietPhong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Tabar_ChitietPhong.swift; sourceTree = "<group>"; };
+		2096288F2294F2CB00CF5AC9 /* HopDong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopDong.swift; sourceTree = "<group>"; };
 		209E14C8228C7800008601E6 /* Screen_Tabar_Controller_00.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Tabar_Controller_00.swift; sourceTree = "<group>"; };
 		20BCC8BB228AF69C008181BE /* Screen_Tabar_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Tabar_Controller.swift; sourceTree = "<group>"; };
 		20EC50CA227DE1F000C17212 /* Quanlythongtincanhan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quanlythongtincanhan.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				20EC50CB227DE1F100C17212 /* Quanlyphong.swift */,
 				20EC50CA227DE1F000C17212 /* Quanlythongtincanhan.swift */,
 				20776733228184430073E596 /* ThanhVien.swift */,
+				2096288F2294F2CB00CF5AC9 /* HopDong.swift */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				18619689226DDD2C004E8A73 /* Constant.swift in Sources */,
 				18F6B86C2269697B00523FBA /* Screen_Tabar_Customer_Seach_1_ViewController.swift in Sources */,
 				1856147B2279256800AE396D /* CELL2_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_TableViewCell.swift in Sources */,
+				209628902294F2CB00CF5AC9 /* HopDong.swift in Sources */,
 				185614792279252500AE396D /* CELL1_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_TableViewCell.swift in Sources */,
 				EAE6DF4321A9A043000749CD /* Modle.swift in Sources */,
 				EA1ABD3E21C4F65F00199442 /* WriteIndexCell.swift in Sources */,

@@ -21,8 +21,9 @@ class Helper {
                 let thongtincanhan: Quanlythongtincanhan = canhan
                 var daytro: [Quanlydaytro] = []
                 var phongtro: [Quanlyphong] = []
-                var chitiet: Chitietphong = Chitietphong.init(diachi: "", dientich: "", gia: 0, motaphong: "", songuoidangthue: 0, songuoitoida: 0, tenphong: "")
+                let chitiet: Chitietphong = Chitietphong.init(diachi: "", dientich: "", gia: 0, motaphong: "", songuoidangthue: 0, songuoitoida: 0, tenphong: "")
                 var thanhvien: [ThanhVien] = []
+                var hopdong: HopDong = HopDong.init()
                 
                 // KIEM TRA NEU CO KEY QUANLYDAYTRO
                 if let _ = postDict["Quanlydaytro"] {
@@ -63,8 +64,19 @@ class Helper {
                                     
                                     chitiet.songuoidangthue = thanhvien.count
                                     
-                                    phongtro.append(Quanlyphong.init(idPhong: item2.key as! String, chitietphong: chitiet, thanhvien:thanhvien))
+                                    if let hopDong: NSMutableDictionary = data2["Hopdong"] as? NSMutableDictionary {
+                                        hopdong.ngayLamHopDong = hopDong["Ngaylamhopdong"] as? String
+                                        hopdong.ngayBatDauO = hopDong["Ngaybatdauo"] as? String
+                                        hopdong.ngayKetThucHopDong = hopDong["Ngayketthuchopdong"] as? String
+                                        hopdong.tenNguoiHopDong = hopDong["Tennguoihopdong"] as? String
+                                        hopdong.CMND = hopDong["CMND"] as? Double
+                                        hopdong.SDT = hopDong["SDT"] as? Double
+                                        hopdong.tienDatCoc = hopDong["Tiendatcoc"] as? Double
+                                    }
+                                    
+                                    phongtro.append(Quanlyphong.init(idPhong: item2.key as! String, chitietphong: chitiet, thanhvien:thanhvien, hopdong: hopdong))
                                     thanhvien = []
+                                    hopdong = HopDong.init()
                                 }
                                 else {
 

@@ -1432,10 +1432,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8Z-rC-hQX">
-                                <rect key="frame" x="127.5" y="621" width="120" height="30"/>
+                                <rect key="frame" x="112.5" y="583" width="150" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.52825704910000004" blue="0.95494434930000005" alpha="0.74716395550000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="hp8-55-Rm8"/>
+                                    <constraint firstAttribute="width" constant="150" id="hp8-55-Rm8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1445,7 +1445,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngày làm hợp đồng" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NT0-w1-qyQ" customClass="AkiraTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="8" y="50" width="359" height="45"/>
+                                <rect key="frame" x="8" y="94" width="359" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Hbw-gH-0S6"/>
                                 </constraints>
@@ -1462,7 +1462,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngày bắt đầu ở" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkh-sL-195" customClass="AkiraTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="8" y="115" width="359" height="45"/>
+                                <rect key="frame" x="8" y="159" width="359" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="gaH-MY-0Ro"/>
                                 </constraints>
@@ -1479,7 +1479,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngày kết thúc hợp đồng" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="doI-E4-ptP" customClass="AkiraTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="8" y="180" width="359" height="45"/>
+                                <rect key="frame" x="8" y="224" width="359" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="tg6-to-JUS"/>
                                 </constraints>
@@ -1496,7 +1496,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tiền đặt cọc" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-eB-2j3" customClass="AkiraTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="8" y="245" width="359" height="45"/>
+                                <rect key="frame" x="8" y="289" width="359" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="x3a-9a-A5x"/>
                                 </constraints>
@@ -1513,7 +1513,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Giá phòng" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="au1-9w-GAj" customClass="AkiraTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="8" y="310" width="359" height="45"/>
+                                <rect key="frame" x="8" y="354" width="359" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="VuD-za-VY1"/>
                                 </constraints>
@@ -1530,7 +1530,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tên người hợp đồng" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaA-2E-L5W" customClass="AkiraTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="8" y="375" width="359" height="45"/>
+                                <rect key="frame" x="8" y="419" width="359" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="DyR-ui-Bzi"/>
                                 </constraints>
@@ -1546,25 +1546,64 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CMND" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-K1-esj" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="8" y="474" width="359" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WrK-Xm-rke"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238475352114" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIJ-F5-sdz" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="8" y="529" width="359" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="sxi-b9-mpp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.88909844989436615" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="au1-9w-GAj" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="2F7-cD-XG0"/>
                             <constraint firstItem="doI-E4-ptP" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="442-tq-Nab"/>
-                            <constraint firstItem="c0x-s5-1d9" firstAttribute="bottom" secondItem="A8Z-rC-hQX" secondAttribute="bottom" priority="750" constant="16" id="4ja-Og-f6B"/>
+                            <constraint firstItem="c0x-s5-1d9" firstAttribute="trailing" secondItem="mHy-K1-esj" secondAttribute="trailing" constant="8" id="79Z-zS-GHn"/>
+                            <constraint firstItem="mHy-K1-esj" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="8Pa-mM-eA5"/>
                             <constraint firstItem="NT0-w1-qyQ" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="8oF-VP-gJx"/>
                             <constraint firstItem="zkh-sL-195" firstAttribute="trailing" secondItem="doI-E4-ptP" secondAttribute="trailing" id="HaJ-sy-g6G"/>
                             <constraint firstItem="zkh-sL-195" firstAttribute="top" secondItem="NT0-w1-qyQ" secondAttribute="bottom" constant="20" id="I5H-Lp-fDh"/>
                             <constraint firstItem="c0x-s5-1d9" firstAttribute="trailing" secondItem="NT0-w1-qyQ" secondAttribute="trailing" constant="8" id="IpH-Fz-4sd"/>
+                            <constraint firstItem="c0x-s5-1d9" firstAttribute="bottom" secondItem="A8Z-rC-hQX" secondAttribute="bottom" constant="5" id="K90-eR-pUG"/>
                             <constraint firstItem="A8Z-rC-hQX" firstAttribute="centerX" secondItem="fbE-47-3PK" secondAttribute="centerX" id="PSg-Si-3D1"/>
+                            <constraint firstItem="c0x-s5-1d9" firstAttribute="trailing" secondItem="EIJ-F5-sdz" secondAttribute="trailing" constant="8" id="Qic-sd-tLs"/>
                             <constraint firstItem="au1-9w-GAj" firstAttribute="top" secondItem="F8h-eB-2j3" secondAttribute="bottom" constant="20" id="TfY-dR-ga6"/>
                             <constraint firstItem="eaA-2E-L5W" firstAttribute="top" secondItem="au1-9w-GAj" secondAttribute="bottom" constant="20" id="ThF-od-7Pk"/>
+                            <constraint firstItem="EIJ-F5-sdz" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="UdQ-KF-w4a"/>
+                            <constraint firstItem="EIJ-F5-sdz" firstAttribute="top" secondItem="mHy-K1-esj" secondAttribute="bottom" constant="10" id="UnI-IQ-HyE"/>
                             <constraint firstItem="NT0-w1-qyQ" firstAttribute="top" secondItem="c0x-s5-1d9" secondAttribute="top" constant="30" id="WDT-ND-AYV"/>
                             <constraint firstItem="au1-9w-GAj" firstAttribute="trailing" secondItem="eaA-2E-L5W" secondAttribute="trailing" id="bhX-HK-4hJ"/>
+                            <constraint firstItem="mHy-K1-esj" firstAttribute="top" secondItem="eaA-2E-L5W" secondAttribute="bottom" constant="10" id="cuD-3j-UF8"/>
                             <constraint firstItem="doI-E4-ptP" firstAttribute="top" secondItem="zkh-sL-195" secondAttribute="bottom" constant="20" id="dMb-0Z-TFP"/>
                             <constraint firstItem="eaA-2E-L5W" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="fcr-Mc-UAw"/>
                             <constraint firstItem="zkh-sL-195" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="jNr-Y8-LJh"/>
-                            <constraint firstItem="A8Z-rC-hQX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eaA-2E-L5W" secondAttribute="bottom" constant="10" id="lFr-cY-ocv"/>
                             <constraint firstItem="c0x-s5-1d9" firstAttribute="trailing" secondItem="F8h-eB-2j3" secondAttribute="trailing" constant="8" id="nsG-pi-jnh"/>
                             <constraint firstItem="doI-E4-ptP" firstAttribute="trailing" secondItem="au1-9w-GAj" secondAttribute="trailing" id="qUY-Vt-0kg"/>
                             <constraint firstItem="F8h-eB-2j3" firstAttribute="leading" secondItem="c0x-s5-1d9" secondAttribute="leading" constant="8" id="tuD-ck-dmv"/>
@@ -1582,11 +1621,13 @@
                         <outlet property="despoistField" destination="F8h-eB-2j3" id="1tM-ch-GTC"/>
                         <outlet property="nameFirstRoomer" destination="eaA-2E-L5W" id="VQh-Wc-y0Z"/>
                         <outlet property="rentalPriceField" destination="au1-9w-GAj" id="gIl-ed-Lj5"/>
+                        <outlet property="txtCMND" destination="mHy-K1-esj" id="fQY-T6-731"/>
+                        <outlet property="txtSDT" destination="EIJ-F5-sdz" id="PqI-N3-hCd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1S6-eB-5jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6100" y="2393"/>
+            <point key="canvasLocation" x="6100" y="2370.7646176911544"/>
         </scene>
         <!--Thành viên-->
         <scene sceneID="WGZ-hS-LLb">
@@ -1851,6 +1892,7 @@
                     <connections>
                         <segue destination="J5T-6H-fMs" kind="relationship" relationship="viewControllers" id="cdB-cP-UVe"/>
                         <segue destination="IsK-01-TeY" kind="relationship" relationship="viewControllers" id="gZR-kG-3se"/>
+                        <segue destination="xxU-ZH-D5n" kind="relationship" relationship="viewControllers" id="hCl-zu-ZOI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cx9-4t-18J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1866,7 +1908,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spb-o9-XRL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tG3-yU-18J">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
@@ -2535,7 +2577,7 @@ Có sân trước rộng để phơi đồ, để xe.</string>
         <image name="smallinformation" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cdB-cP-UVe"/>
+        <segue reference="GAK-EY-Jl3"/>
         <segue reference="5GY-3L-HSd"/>
     </inferredMetricsTieBreakers>
 </document>

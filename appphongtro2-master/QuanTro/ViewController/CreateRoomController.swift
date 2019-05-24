@@ -106,12 +106,14 @@ class CreateRoomController: UIViewController, UIImagePickerControllerDelegate, U
         let uid = Auth.auth().currentUser?.uid
         let idPhong: String = Database.database().reference().childByAutoId().key!
         
-        let newRoom: Quanlyphong = Quanlyphong.init(idPhong: idPhong, chitietphong: chiTietPhong, thanhvien:  [])
+        let newRoom: Quanlyphong = Quanlyphong.init(idPhong: idPhong, chitietphong: chiTietPhong, thanhvien: [], hopdong: HopDong.init())
         Store.shared.userMotel.quanlydaytro![Store.shared.indexDaytro].quanlyphong!.append(newRoom)
         
         let idDAYTRO: String = daytro.iDdaytro!
         
         let lastRoom: Chitietphong = newRoom.chitietphong!
+        
+        print(newRoom.hopdong)
         
         let data: [String:Any] = [
             "Diachi": lastRoom.diachi!,

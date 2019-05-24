@@ -11,6 +11,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in Screen_Tabar_ListRoom.viewDidLoad():Screen_Tabar_ListRoom.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "a">
+            </PersistentString>
+            <PersistentString
+               value = "item.quanlyphong![i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in ListRoomController.tableView(_:commit:forRowAt:):ListRoomController.swift">
          <PersistentStrings>
             <PersistentString
@@ -19,13 +30,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in ListRoomerController.tableView(_:commit:forRowAt:):ListRoomerController.swift">
+         contextName = "ListOfMotel.saveDataToFirebase():ListOfMotel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "Store.shared.indexDaytro">
-            </PersistentString>
-            <PersistentString
-               value = "indexPath.row">
+               value = "print(motel![0])">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -37,33 +45,6 @@
             </PersistentString>
             <PersistentString
                value = "newRoomer.ten">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Screen_Tabar_Controller.didTapRootView(_:):Screen_Tabar_Controller.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.navigationController?.viewControllers">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "CreateRoomController.init(coder:):CreateRoomController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "Store.shared.userMotel.quanlydaytro">
-            </PersistentString>
-            <PersistentString
-               value = "daytro">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ListOfMotel.saveDataToFirebase():ListOfMotel.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "print(motel![0])">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -82,13 +63,21 @@
          contextName = "closure #1 in Helper.fetchData(tableName:currentUserId:completion:):Helper.swift">
          <PersistentStrings>
             <PersistentString
-               value = "roomer">
+               value = "hopdong">
             </PersistentString>
             <PersistentString
-               value = "item3.value">
+               value = "item2.key">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CreateRoomController.init(coder:):CreateRoomController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Store.shared.userMotel.quanlydaytro">
             </PersistentString>
             <PersistentString
-               value = "snapshot.key">
+               value = "daytro">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -104,13 +93,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in Screen_Tabar_ListRoom.viewDidLoad():Screen_Tabar_ListRoom.swift">
+         contextName = "closure #1 in ListRoomerController.tableView(_:commit:forRowAt:):ListRoomerController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "a">
+               value = "Store.shared.indexDaytro">
             </PersistentString>
             <PersistentString
-               value = "item.quanlyphong![i]">
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Screen_Tabar_Controller.didTapRootView(_:):Screen_Tabar_Controller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController?.viewControllers">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

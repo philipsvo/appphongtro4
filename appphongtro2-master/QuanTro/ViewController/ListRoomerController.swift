@@ -9,6 +9,7 @@ class ListRoomerController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var listRoomer: [ThanhVien]!
     var chiTietPhong: Chitietphong!
+    let phongtro: Quanlyphong = Store.shared.userMotel.quanlydaytro![Store.shared.indexDaytro].quanlyphong![Store.shared.indexPhongtro]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +19,13 @@ class ListRoomerController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.register(nib, forCellReuseIdentifier: "RoomerCell")
         tableView.rowHeight = 110
         
-        listRoomer = Store.shared.userMotel.quanlydaytro![Store.shared.indexDaytro].quanlyphong![Store.shared.indexPhongtro].thanhvien!
-        chiTietPhong = Store.shared.userMotel.quanlydaytro![Store.shared.indexDaytro].quanlyphong![Store.shared.indexPhongtro].chitietphong
+        listRoomer = phongtro.thanhvien
+        chiTietPhong = phongtro.chitietphong
 }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
-        print("AA")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -100,7 +100,15 @@ class ListRoomerController: UIViewController, UITableViewDelegate, UITableViewDa
             present(alert, animated: true, completion: nil)
             return
         }
-        self.performSegue(withIdentifier: "FromListRoomerToCreate", sender: tableView.cellForRow(at: indexPath))
+        else if phongtro.hopdong?.tenNguoiHopDong == "" {
+            let alert = UIAlertController(title: "Không thể tạo người trọ", message: "Xin hãy làm hợp đồng trước khi thêm người ở trọ", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Đóng", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        else {
+            self.performSegue(withIdentifier: "FromListRoomerToCreate", sender: tableView.cellForRow(at: indexPath))
+        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -118,9 +126,6 @@ class ListRoomerController: UIViewController, UITableViewDelegate, UITableViewDa
         if editingStyle == UITableViewCell.EditingStyle.delete{
             let actionSheet = UIAlertController(title: "Bạn muốn xoá người trọ này?", message: "Nếu xoá sẽ không thể khôi phục lại người trọ này", preferredStyle: .actionSheet)
             actionSheet.addAction(UIAlertAction(title: "Tôi muốn xoá", style: .destructive, handler: { (action) in
-//                ListOfMotel.shared.deleteRoomer(withIndex: indexPath.row)
-//                self.listRoomer.remove(at: indexPath.row)
-//                ListOfMotel.shared.saveDataToFirebase()
                 
                 let idThanhvien: String = (self.listRoomer?[indexPath.row].idThanhVien)!
                 
