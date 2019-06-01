@@ -1460,6 +1460,9 @@
                                         <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.88915346750000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NgayLamHopDongBeginEditing:" destination="xxU-ZH-D5n" eventType="editingDidBegin" id="72t-c3-cDJ"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngày bắt đầu ở" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkh-sL-195" customClass="AkiraTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="8" y="159" width="359" height="45"/>
@@ -1477,6 +1480,9 @@
                                         <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.88915346750000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NgayBatDauOBeginEditing:" destination="xxU-ZH-D5n" eventType="editingDidBegin" id="PPv-31-5Vr"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngày kết thúc hợp đồng" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="doI-E4-ptP" customClass="AkiraTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="8" y="224" width="359" height="45"/>
@@ -1494,6 +1500,9 @@
                                         <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.88915346750000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NgayKetThucHopDongBeginEditing:" destination="xxU-ZH-D5n" eventType="editingDidBegin" id="3it-aA-LIm"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tiền đặt cọc" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-eB-2j3" customClass="AkiraTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="8" y="289" width="359" height="45"/>
@@ -1628,6 +1637,208 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1S6-eB-5jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6100" y="2370.7646176911544"/>
+        </scene>
+        <!--Điện nước-->
+        <scene sceneID="o4N-LR-4bV">
+            <objects>
+                <viewController id="hHV-Ka-Gwv" customClass="ElectricWaterViewController" customModule="QuanTro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gec-wL-gJr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngày ghi chỉ số" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-Z1-XxQ" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="10" y="74" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="od2-hG-kcn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238479999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NgayGhiBeginEditing:" destination="hHV-Ka-Gwv" eventType="editingDidEnd" id="orb-uc-5by"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Chỉ số điện tháng trước (kWh)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wsX-d0-Mr4" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="10" y="159" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TYy-Pv-qKV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238479999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Chỉ số điện tháng này (kWh)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ncm-jX-evG" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="10" y="214" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="A9H-xV-PtJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238479999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tiền điện" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzG-1a-TcH" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="10" y="269" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4Yb-L9-9du"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238479999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Chỉ số nước tháng trước" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgq-g0-Qie" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="10" y="354" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="s8C-F6-yZJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238479999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Chỉ số nước tháng này" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywF-lp-MbJ" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="10" y="409" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="brU-0u-ZHx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238479999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tiền nước" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6S-cr-ET8" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="10" y="464" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="F6r-KS-EWC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47450980390000003" blue="0.92156862750000001" alpha="0.89358238479999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.53371277429999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAs-WN-xMA">
+                                <rect key="frame" x="125" y="573" width="125" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XdT-kG-bFf"/>
+                                </constraints>
+                                <state key="normal" title="Thanh toán"/>
+                                <connections>
+                                    <action selector="didTapThanhToan:" destination="hHV-Ka-Gwv" eventType="touchUpInside" id="JeX-Bi-sv7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ywF-lp-MbJ" firstAttribute="top" secondItem="vgq-g0-Qie" secondAttribute="bottom" constant="10" id="4gh-7h-rkB"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="trailing" secondItem="ywF-lp-MbJ" secondAttribute="trailing" constant="10" id="6Fj-U2-Ohc"/>
+                            <constraint firstItem="ywF-lp-MbJ" firstAttribute="leading" secondItem="aA6-gY-FIa" secondAttribute="leading" constant="10" id="76P-gX-yfq"/>
+                            <constraint firstItem="hzG-1a-TcH" firstAttribute="top" secondItem="Ncm-jX-evG" secondAttribute="bottom" constant="10" id="7EC-c6-J28"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="trailing" secondItem="wsX-d0-Mr4" secondAttribute="trailing" constant="10" id="9ot-iz-90b"/>
+                            <constraint firstItem="vgq-g0-Qie" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="AlZ-Z2-3s5"/>
+                            <constraint firstItem="o6h-Z1-XxQ" firstAttribute="top" secondItem="aA6-gY-FIa" secondAttribute="top" constant="10" id="CSP-dQ-yxc"/>
+                            <constraint firstItem="vgq-g0-Qie" firstAttribute="leading" secondItem="aA6-gY-FIa" secondAttribute="leading" constant="10" id="KZN-hi-gyv"/>
+                            <constraint firstItem="x6S-cr-ET8" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="M6A-to-P14"/>
+                            <constraint firstItem="ywF-lp-MbJ" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="NTX-sD-Z0L"/>
+                            <constraint firstItem="hzG-1a-TcH" firstAttribute="leading" secondItem="aA6-gY-FIa" secondAttribute="leading" constant="10" id="NpV-cb-XZr"/>
+                            <constraint firstItem="Ncm-jX-evG" firstAttribute="top" secondItem="wsX-d0-Mr4" secondAttribute="bottom" constant="10" id="P1n-ky-dx5"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="trailing" secondItem="x6S-cr-ET8" secondAttribute="trailing" constant="10" id="ReM-IA-0P6"/>
+                            <constraint firstItem="hzG-1a-TcH" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="VVs-Og-cH0"/>
+                            <constraint firstItem="x6S-cr-ET8" firstAttribute="top" secondItem="ywF-lp-MbJ" secondAttribute="bottom" constant="10" id="WPb-au-9DF"/>
+                            <constraint firstItem="o6h-Z1-XxQ" firstAttribute="leading" secondItem="aA6-gY-FIa" secondAttribute="leading" constant="10" id="dpA-3G-5Ex"/>
+                            <constraint firstItem="yAs-WN-xMA" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="gIK-M9-bCG"/>
+                            <constraint firstItem="wsX-d0-Mr4" firstAttribute="leading" secondItem="aA6-gY-FIa" secondAttribute="leading" constant="10" id="hKo-aE-9Is"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="trailing" secondItem="vgq-g0-Qie" secondAttribute="trailing" constant="10" id="hyo-Ra-Hah"/>
+                            <constraint firstItem="wsX-d0-Mr4" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="kl3-la-8PL"/>
+                            <constraint firstItem="wsX-d0-Mr4" firstAttribute="top" secondItem="o6h-Z1-XxQ" secondAttribute="bottom" constant="40" id="nRF-X5-2b5"/>
+                            <constraint firstItem="yAs-WN-xMA" firstAttribute="width" secondItem="Gec-wL-gJr" secondAttribute="width" multiplier="1:3" id="nxG-bu-54I"/>
+                            <constraint firstItem="vgq-g0-Qie" firstAttribute="top" secondItem="hzG-1a-TcH" secondAttribute="bottom" constant="40" id="odX-mw-sjf"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="trailing" secondItem="Ncm-jX-evG" secondAttribute="trailing" constant="10" id="otK-ah-2Im"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="trailing" secondItem="hzG-1a-TcH" secondAttribute="trailing" constant="10" id="pUf-rK-I5z"/>
+                            <constraint firstItem="x6S-cr-ET8" firstAttribute="leading" secondItem="aA6-gY-FIa" secondAttribute="leading" constant="10" id="ptU-GW-IZJ"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="trailing" secondItem="o6h-Z1-XxQ" secondAttribute="trailing" constant="10" id="rIS-Sj-hb4"/>
+                            <constraint firstItem="o6h-Z1-XxQ" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="rfu-VQ-Jkx"/>
+                            <constraint firstItem="Ncm-jX-evG" firstAttribute="leading" secondItem="aA6-gY-FIa" secondAttribute="leading" constant="10" id="sMv-9l-oth"/>
+                            <constraint firstItem="Ncm-jX-evG" firstAttribute="centerX" secondItem="Gec-wL-gJr" secondAttribute="centerX" id="yPZ-jI-ua1"/>
+                            <constraint firstItem="aA6-gY-FIa" firstAttribute="bottom" secondItem="yAs-WN-xMA" secondAttribute="bottom" constant="5" id="yaV-Or-Z3P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aA6-gY-FIa"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="HjI-Cd-b0U" appends="YES" id="0kM-DJ-oWM"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Điện nước" image="manage" id="NEi-Af-qLT"/>
+                    <connections>
+                        <outlet property="btnThanhToan" destination="yAs-WN-xMA" id="82Z-kN-Nd9"/>
+                        <outlet property="dienThangNay" destination="Ncm-jX-evG" id="HkW-Sd-kaI"/>
+                        <outlet property="dienThangTruoc" destination="wsX-d0-Mr4" id="eMY-ks-U79"/>
+                        <outlet property="ngayGhi" destination="o6h-Z1-XxQ" id="H94-1H-MJT"/>
+                        <outlet property="nuocThangNay" destination="ywF-lp-MbJ" id="uFD-6q-e4e"/>
+                        <outlet property="nuocThangTruoc" destination="vgq-g0-Qie" id="EwT-LI-G1P"/>
+                        <outlet property="tienDien" destination="hzG-1a-TcH" id="5he-KK-vf2"/>
+                        <outlet property="tienNuoc" destination="x6S-cr-ET8" id="RzZ-dd-eOb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxB-Wh-HqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HjI-Cd-b0U">
+                    <connections>
+                        <action selector="TapGesture:" destination="hHV-Ka-Gwv" id="9Wj-HU-rT2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4981.6000000000004" y="2463.4182908545731"/>
         </scene>
         <!--Thành viên-->
         <scene sceneID="WGZ-hS-LLb">
@@ -1893,6 +2104,7 @@
                         <segue destination="J5T-6H-fMs" kind="relationship" relationship="viewControllers" id="cdB-cP-UVe"/>
                         <segue destination="IsK-01-TeY" kind="relationship" relationship="viewControllers" id="gZR-kG-3se"/>
                         <segue destination="xxU-ZH-D5n" kind="relationship" relationship="viewControllers" id="hCl-zu-ZOI"/>
+                        <segue destination="hHV-Ka-Gwv" kind="relationship" relationship="viewControllers" id="ccI-Pn-z03"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cx9-4t-18J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1908,7 +2120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spb-o9-XRL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tG3-yU-18J">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
@@ -2567,7 +2779,7 @@ Có sân trước rộng để phơi đồ, để xe.</string>
         <image name="information" width="60" height="60"/>
         <image name="listpeople" width="32" height="32"/>
         <image name="listroom" width="60" height="60"/>
-        <image name="manage" width="48" height="48"/>
+        <image name="manage" width="32" height="32"/>
         <image name="motel" width="60" height="60"/>
         <image name="nha2" width="1280" height="643"/>
         <image name="person" width="256" height="256"/>
@@ -2577,7 +2789,7 @@ Có sân trước rộng để phơi đồ, để xe.</string>
         <image name="smallinformation" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GAK-EY-Jl3"/>
+        <segue reference="cdB-cP-UVe"/>
         <segue reference="5GY-3L-HSd"/>
     </inferredMetricsTieBreakers>
 </document>

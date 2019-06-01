@@ -112,9 +112,7 @@ class CreateRoomController: UIViewController, UIImagePickerControllerDelegate, U
         let idDAYTRO: String = daytro.iDdaytro!
         
         let lastRoom: Chitietphong = newRoom.chitietphong!
-        
-        print(newRoom.hopdong)
-        
+                
         let data: [String:Any] = [
             "Diachi": lastRoom.diachi!,
             "Dientich": lastRoom.dientich!,

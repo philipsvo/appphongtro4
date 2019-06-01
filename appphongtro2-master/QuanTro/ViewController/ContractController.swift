@@ -15,10 +15,17 @@ class ContractController: UIViewController {
     @IBOutlet weak var txtSDT: AkiraTextField!
     @IBOutlet weak var cancleContractButton: UIButton!
     
+    var datePicker:UIDatePicker!
+    
     let phongtro = Store.shared.userMotel.quanlydaytro![Store.shared.indexDaytro].quanlyphong?[Store.shared.indexPhongtro]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 200))
+        datePicker.datePickerMode = .date
+        datePicker.locale = Locale(identifier: "vi")
+        
         cancleContractButton.layer.cornerRadius = 3
         cancleContractButton.layer.shadowOpacity = 1
         if phongtro?.hopdong?.tenNguoiHopDong == "" {
@@ -41,9 +48,10 @@ class ContractController: UIViewController {
             cancleContractButton.setTitle("Huỷ hợp đồng", for: .normal)
             setupInfo()
         }
+        
     }
     
-    func setupInfo(){
+    private func setupInfo(){
         guard let contract = phongtro?.hopdong else{return}
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
@@ -55,6 +63,22 @@ class ContractController: UIViewController {
         nameFirstRoomer.text = contract.tenNguoiHopDong
         txtCMND.text = String.init(format: "%.0f", contract.CMND ?? 0.0)
         txtSDT.text = String.init(format: "%.0f", contract.SDT ?? 0.0)
+    }
+    
+    private func setupToolBar()->UIToolbar{
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor(red: 199/255, green: 90/255, blue: 90/255, alpha: 1)
+        toolBar.sizeToFit()
+        // Adding Button ToolBar
+        let doneButton = UIBarButtonItem(title: "Chọn", style: .plain, target: self, action: #selector(self.doneClick))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Huỷ", style: .plain, target: self, action: #selector(self.cancelClick))
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        return toolBar
     }
 
     @IBAction func cancelContract(_ sender: Any) {
@@ -70,11 +94,14 @@ class ContractController: UIViewController {
                 
                 Database.database().reference().child("User/User2/\(uid)/Quanlydaytro/\(idDaytro)/Quanlyphong/\(idPhong)/Quanlythanhvien").removeValue()
                 
+                Database.database().reference().child("User/User2/\(uid)/Quanlydaytro/\(idDaytro)/Quanlyphong/\(idPhong)/Chitietphong").updateChildValues(["Songuoidangthue": 0])
+                
                 alert.addAction(UIAlertAction(title: "Đóng", style: .default, handler: {(action) in
                     let indexDay: Int = Store.shared.indexDaytro
                     let indexPhong: Int = Store.shared.indexPhongtro
                     Store.shared.userMotel.quanlydaytro![indexDay].quanlyphong![indexPhong].hopdong = HopDong.init()
                     Store.shared.userMotel.quanlydaytro![indexDay].quanlyphong![indexPhong].thanhvien = []
+                    Store.shared.userMotel.quanlydaytro![indexDay].quanlyphong![indexPhong].chitietphong!.songuoidangthue = 0
                     self.navigationController?.popViewController(animated: true)
                 }))
                 self.present(alert, animated: true, completion: nil)
@@ -119,4 +146,49 @@ class ContractController: UIViewController {
         }
     }
     
+    @IBAction func NgayLamHopDongBeginEditing(_ sender: Any) {
+        contractSigningDateField.inputView = datePicker
+        contractSigningDateField.inputAccessoryView = setupToolBar()
+    }
+    
+    @IBAction func NgayBatDauOBeginEditing(_ sender: Any) {
+        dayStartAtField.inputView = datePicker
+        dayStartAtField.inputAccessoryView = setupToolBar()
+    }
+
+    @IBAction func NgayKetThucHopDongBeginEditing(_ sender: Any) {
+        dayEndAtField.inputView = datePicker
+        dayEndAtField.inputAccessoryView = setupToolBar()
+    }
+    
+    @objc func doneClick(){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        switch true {
+        case contractSigningDateField.isEditing:
+            contractSigningDateField.text = dateFormatter.string(from: datePicker.date)
+            break
+        case dayStartAtField.isEditing:
+            dayStartAtField.text = dateFormatter.string(from: datePicker.date)
+            break
+        case dayEndAtField.isEditing:
+            dayEndAtField.text = dateFormatter.string(from: datePicker.date)
+            break
+        default:
+            break
+        }
+        cancelClick()
+        
+    }
+    
+    @objc func cancelClick(){
+        contractSigningDateField.resignFirstResponder()
+        dayStartAtField.resignFirstResponder()
+        dayEndAtField.resignFirstResponder()
+        despoistField.resignFirstResponder()
+        rentalPriceField.resignFirstResponder()
+        nameFirstRoomer.resignFirstResponder()
+        txtCMND.resignFirstResponder()
+        txtSDT.resignFirstResponder()
+    }
 }

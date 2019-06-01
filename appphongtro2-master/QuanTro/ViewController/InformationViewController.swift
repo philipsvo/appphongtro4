@@ -167,6 +167,7 @@ class InformationViewController: UIViewController, UINavigationControllerDelegat
             alert.addAction(UIAlertAction(title: "Đóng", style: .default, handler: nil))
             self.present(alert, animated: true) {
                 self.indicator.stopAnimating()
+                indicatorView.removeFromSuperview()
             }
             return
         }

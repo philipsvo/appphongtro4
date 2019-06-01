@@ -34,6 +34,7 @@
 		18FA184622786436009D02B9 /* Screen_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA184522786435009D02B9 /* Screen_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_ViewController.swift */; };
 		18FDA6B322840F30003F8045 /* Screen_Chat_Room_With_Rent_01_01_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA6B222840F30003F8045 /* Screen_Chat_Room_With_Rent_01_01_ViewController.swift */; };
 		20776734228184430073E596 /* ThanhVien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20776733228184430073E596 /* ThanhVien.swift */; };
+		207C4DDE229B8326002D0F2D /* ElectricWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207C4DDD229B8326002D0F2D /* ElectricWaterViewController.swift */; };
 		208DB18C229195FF002070DA /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB18B229195FF002070DA /* InformationViewController.swift */; };
 		20908DE62284FEEA00362EFF /* Screen_Tabar_ListRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908DE52284FEEA00362EFF /* Screen_Tabar_ListRoom.swift */; };
 		20908DE8228514F400362EFF /* Screen_Tabar_ChitietPhong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908DE7228514F400362EFF /* Screen_Tabar_ChitietPhong.swift */; };
@@ -109,6 +110,7 @@
 		18FA184522786435009D02B9 /* Screen_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Tabar_Custom_Search_02_01_DSOf01_Detail__Chat_ViewController.swift; sourceTree = "<group>"; };
 		18FDA6B222840F30003F8045 /* Screen_Chat_Room_With_Rent_01_01_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Chat_Room_With_Rent_01_01_ViewController.swift; sourceTree = "<group>"; };
 		20776733228184430073E596 /* ThanhVien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanhVien.swift; sourceTree = "<group>"; };
+		207C4DDD229B8326002D0F2D /* ElectricWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricWaterViewController.swift; sourceTree = "<group>"; };
 		208DB18B229195FF002070DA /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		20908DE52284FEEA00362EFF /* Screen_Tabar_ListRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Tabar_ListRoom.swift; sourceTree = "<group>"; };
 		20908DE7228514F400362EFF /* Screen_Tabar_ChitietPhong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_Tabar_ChitietPhong.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				EA00CA5A21D9AEC5000124F8 /* ListRoomerController.swift */,
 				EAE6DF2821A8F614000749CD /* LoginController.swift */,
 				208DB18B229195FF002070DA /* InformationViewController.swift */,
+				207C4DDD229B8326002D0F2D /* ElectricWaterViewController.swift */,
 				181C88B42283F27400C43758 /* own_room */,
 				EAE6DF3D21A92682000749CD /* RegisterController.swift */,
 				18D31CCD226829E600482F00 /* Screen_Main_Customer_ViewController.swift */,
@@ -411,7 +414,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Le Nguyen Quoc Cuong";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					EAE6DF2221A8F614000749CD = {
 						CreatedOnToolsVersion = 10.1;
@@ -584,6 +587,7 @@
 				20EC50D6227DE27200C17212 /* Helper.swift in Sources */,
 				20908DE8228514F400362EFF /* Screen_Tabar_ChitietPhong.swift in Sources */,
 				EAA8927821B1590A005761BB /* ListRoomController.swift in Sources */,
+				207C4DDE229B8326002D0F2D /* ElectricWaterViewController.swift in Sources */,
 				18FA183C227836AE009D02B9 /* Screen_Tabar_Custom_Search_02_01_DSOf01_Detail_ViewController.swift in Sources */,
 				208DB18C229195FF002070DA /* InformationViewController.swift in Sources */,
 				18FA184022783753009D02B9 /* Screen_Tabar_Custom_Search_02_01_ViewController.swift in Sources */,

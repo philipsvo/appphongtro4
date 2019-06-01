@@ -202,6 +202,7 @@ class RegisterController: UIViewController ,UIImagePickerControllerDelegate, UIN
                                                 self.goto_Screen_Main_khach_hang()
                                             }else if(q == 2)
                                                     {
+                                                        self.navigationController?.popToRootViewController(animated: true)
                                                        print("di den man hinh chu phong")
                                                     }
 //                                            // tao tai khoan thanh cong thi se luu thong tin nguoi dung vao database
