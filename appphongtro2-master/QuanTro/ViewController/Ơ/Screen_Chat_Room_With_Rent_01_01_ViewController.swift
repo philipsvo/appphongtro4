@@ -68,6 +68,10 @@ class Screen_Chat_Room_With_Rent_01_01_ViewController: UIViewController,UITextFi
         }
     }
     
+    @IBAction func TapGesture(_ sender: Any) {
+        txt_Chat.resignFirstResponder()
+    }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         txt_Chat.layer.borderColor = UIColor.blue.cgColor
         txt_Chat.layer.borderWidth = 2.0

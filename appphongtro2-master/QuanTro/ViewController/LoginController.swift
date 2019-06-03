@@ -16,7 +16,8 @@ class LoginController: UIViewController{
     @IBOutlet weak var passwordField: UITextField!
     
     @IBOutlet weak var registerButton: UIButton!
-//    @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
+    @IBOutlet weak var btnExit: UIButton!
+    //    @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
 //    @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var loginButton: UIButton!
     var array_user:Array<User> = Array<User>()
@@ -169,6 +170,10 @@ class LoginController: UIViewController{
         navigationController?.pushViewController(scr!, animated: true)
     }
     
+    @IBAction func btnExit(_ sender: Any) {
+        exit(0)
+    }
+    
     func goto_Screen_Main_chu_phong() {
         let scr = self.storyboard?.instantiateViewController(withIdentifier: "Screen_Chat_Roon_With_Rent_01") as! Screen_Chat_Roon_With_Rent_01_ViewController
         //        present(scr!, animated: true, completion: nil)
@@ -185,6 +190,9 @@ class LoginController: UIViewController{
         loginButton.layer.shadowOpacity = 2
         registerButton.layer.cornerRadius = 4
         registerButton.layer.shadowOpacity = 2
+//        btnExit.layer.masksToBounds = true
+        btnExit.layer.cornerRadius = 4
+        btnExit.layer.shadowOpacity = 2
         usernameField.setupUI()
         passwordField.setupUI()
         

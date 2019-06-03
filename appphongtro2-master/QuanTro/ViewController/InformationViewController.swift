@@ -12,7 +12,7 @@ import Firebase
 import MobileCoreServices
 import Kingfisher
 
-class InformationViewController: UIViewController, UINavigationControllerDelegate {
+class InformationViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var lblTitle: UILabel!
@@ -203,6 +203,11 @@ class InformationViewController: UIViewController, UINavigationControllerDelegat
     }
     @IBAction func didTapCloseButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func TapGesture(_ sender: Any) {
+        txtName.resignFirstResponder()
+        txtPhone.resignFirstResponder()
+        txtEmail.resignFirstResponder()
     }
     
     @objc func pickMediaFromSource(_ sourceType:UIImagePickerController.SourceType) {
